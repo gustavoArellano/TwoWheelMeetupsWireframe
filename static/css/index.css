@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+#header {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#header h1 {
+    cursor: default;
+    color: red;
+    font-family: "Cedarville Cursive", cursive;
+}
+
+#links {
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+#links ul li{
+    display: inline-block;
+}
+
+#links ul li a {
+    padding: 5px;
+    text-decoration: none;
+    color: gray;
+    border-bottom: 0px solid gray; 
+    transition: border 150ms, padding 150ms;
+}
+
+#links ul li a:hover {
+    border-bottom: 2px solid gray;
+    padding-bottom: 15px;
+}
+
+#landingPage {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/indexImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding: 100px 20px;
+}
+
+#landingPage h1 {
+    font-size: 40pt;
+    font-family: "Cedarville Cursive", cursive;
+    margin-top: 50px;
+    color: white;
+}
+
+#landingPage .btn {
+    margin: 50px 20px;
+}
+
+#landingPage .mobileOnly {
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 20pt;
+    color: white;
+}
+
+
+@media only screen and (max-width: 480px) {
+    #header {
+        background-color: white;
+        padding: 5px;
+        width: 100%;
+        opacity: 0.88;
+    } 
+
+    #header h1, #links {
+        margin: auto;
+    }
+
+    #header h1{
+        display: block;
+    }
+
+    #header #links {
+        display: block;
+    }
+
+    #links ul li a:hover {
+        border-bottom: 2px solid gray;
+        padding-bottom: 8px;
+    }
+
+    #landingPage {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ducatiMobileImage2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+    }
+
+    #landingPage h1 {
+        display: none;
+    }
+
+    #landingPage .btn {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 481px) {
+    #landingPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+    }
+
+    #landingPage .mobileOnly {
+        display: none;
+    }
+
+    #landingPage h1 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    #landingPage .btn {
+        margin: 0px auto;
+        padding: 0px;
+        width: 150px;
+        height: 40px;
+        box-shadow: 3px 3px 8px rgb(0, 0, 0.5);
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    #header .links {
+        margin-top: 20px;
+    }
+    #landingPage { 
+        text-align: center;
+    }
+
+    #landingPage .mobileOnly {
+        display: none;
+    }
+
+    #landingPage .btn {
+        width: 200px;
+        height: 40px;
+        box-shadow: 3px 3px 8px rgb(0, 0, 0.5);
+    }
+}
+
