@@ -1,8 +1,9 @@
 * {
     margin: 0px;
-    padding: 0;
+    padding: 0px;
 }
 
+/* HEADER */
 #header {
     padding: 10px;
     display: flex;
@@ -39,6 +40,7 @@
     padding-bottom: 15px;
 }
 
+/* LANDING PAGE */
 #landingPage {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/indexImage.jpg");
     background-repeat: no-repeat;
@@ -64,8 +66,109 @@
     color: white;
 }
 
+/* UPCOMING EVENTS */
+#upcomingEvents {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#upcomingEvents h1 b {
+    color: #313E47;
+}
+
+.event {
+    overflow: auto;
+    padding: 10px 10px 20px 10px;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    box-shadow: 1px 1px 5px lightslategray;
+    border-radius: 10px;
+}
+
+.creator p .userImage {
+    margin: 5px;
+    width: 10%;
+    height: 20%px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.creator p {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.eventInfo  h1{
+    color: red;
+    font-family: "Cedarville Cursive", cursive; 
+}
+
+/* HOW IT WORKS */
+#howItWorks {
+    display: inline-block;
+    background-color: #111720;
+    color: white;
+    text-align: center;
+    padding: 50px 10px 25px 0px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.find {
+    width: 40%;
+}
+
+.find a:link {
+    text-decoration: none;
+}
+
+.create a:link {
+    text-decoration: none;
+}
+
+.create {
+    width: 40%;
+}
+
+.find, .create {
+    margin-top: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.arrow {
+    margin-left: 25px;
+    color: #46A0C3;
+}
+
+a b {
+    color: #46A0C3;
+}
+
+.icon {
+    color: #46A0C3;
+    margin: 5px;
+}
+
+.icon, .find {
+    display: inline-block;
+}
+
+.icon2 {
+    color: #46A0C3;
+    margin: 5px;
+}
+
+.icon2, .create {
+    display: inline-block;
+}
+
 
 @media only screen and (max-width: 480px) {
+    /* HEADER */
     #header {
         background-color: white;
         padding: 5px;
@@ -90,6 +193,7 @@
         padding-bottom: 8px;
     }
 
+    /* LANDING PAGE */
     #landingPage {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ducatiMobileImage2.jpg");
         background-repeat: no-repeat;
@@ -105,16 +209,46 @@
     #landingPage .btn {
         display: none;
     }
+
+    /* UPCOMING EVENTS */
+    .event {
+        width: 85%;
+        margin: 20px 0px;
+    }
+
+    /* HOW IT WORKS */
+    .find {
+        width: 100%;
+    }
+    
+    .create {
+        width: 100%;
+    }
+
+    .find, .create {
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+    }
     
 }
 
 @media only screen and (min-width: 481px) {
+    /* UPCOMING EVENTS */
+    .event {
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 700px) {
+    /* LANDING PAGE */
     #landingPage {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tabletImage3.jpg");
+        background-position: center;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-position: center;
     }
 
     #landingPage .mobileOnly {
@@ -134,12 +268,43 @@
         box-shadow: 1px 1px 6px rgb(0, 0, 0.5);
     }
 
+    /* UPCOMING EVENTS */
+    .event {
+        width: 25%;
+    }
+
+    /* HOW IT WORKS */
+    .find {
+        margin-right: 8px;
+    }
+
+    .create {
+        margin-left: 8px;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
+    /* HEADER */
     #header .links {
         margin-top: 20px;
     }
+
+    /* UPCOMING EVENTS */
+    .event {
+        width: 20%;
+    }
+
+    /* LANIDNG PAGE */
+    #landingPage {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/indexImage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        padding: 100px 20px;
+    }
+    
     #landingPage { 
         text-align: center;
     }
@@ -152,6 +317,10 @@
         width: 200px;
         height: 40px;
         box-shadow: 1px 1px 6px rgb(0, 0, 0.5);
+    }
+
+    .event {
+        height: 500px;
     }
 }
 
