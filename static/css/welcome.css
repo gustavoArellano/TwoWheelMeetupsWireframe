@@ -140,7 +140,7 @@
 
     /* UPCOMING EVENT */
     #mobileUpcomingEvent h5 {
-        margin-top: 100px;
+        margin-top: 110px;
     }
 
     #mobileUpcomingEvent {
@@ -433,10 +433,12 @@
 
     /* ALL AVAILABLE MEETUPS */
     #mobileAvailableMeetups {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         background-color: whitesmoke;
         width: 100%;
         padding: 20px;
-        text-align: center;
     }
 
     .event {
@@ -515,6 +517,11 @@
 
     #mobileAvailableMeetups .goingComment a p {
         font-size: 8pt;
+    }
+
+    #mobileAvailableMeetups h5 {
+        width: 100%;
+        
     }
 
 }
