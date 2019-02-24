@@ -4,10 +4,122 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Home</title>
+        <title>2Wheel Meetups - HOME</title>
+        <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Josefin+Sans|Pacifico" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="../static/css/welcome.css">
+        <script src="../js/welcome.js"></script>
     </head>
 
     <body>
+        <div id="container">
+            <div id="header">
+                <h1><strong>2Wheel Meetups</strong></h1>
+
+                <div id="links">
+                    <ul>
+                        <li><a href="login.html">Profile</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="upcoming.html">Upcoming Meetup</a></li>
+                        <li><a href="index.html">Sign Out</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+
+                    <button onclick="myFunction()" class="menuButton"><i class="fas fa-bars"></i> MENU</button>
+
+                    <div id="tabletDropdown" class="dropdown-content">
+                        <a href="userProfile.html">Profile</a>
+                        <a href="explore.html">Explore</a>
+                        <a href="upcoming.html">Upcoming Meetup</a>
+                        <a href="index.html">Sign Out</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="mobileLinks">
+
+                <a href="index.html">
+                    <i class="fas fa-user fa-2x"></i>
+                    <p>Profile</p>
+                </a>
+                <a href="index.html">
+                    <i class="fas fa-search fa-2x"></i>
+                    <p>Explore</p>
+                </a>
+                <a href="index.html">
+                    <i class="fas fa-calendar-alt fa-2x"></i>
+                    <p>Upcoming</p>
+                </a>
+                <a href="index.html">
+                    <i class="fas fa-sign-out-alt fa-2x"></i>
+                    <p>Sign Out</p>
+                </a>
+            
+            </div>
+        </div>
+        
+        <div id="mobileUpcomingEvent">
+
+            <h5><strong>Your Next Meetup</strong></h5>
+
+            <div class="event">
+
+                <p class="date">Friday, December 25, 2019, 5:00 PM</p>
+                <img src="../static/images/routeImage.png" alt="">
+                <p class="address"><a href="#">3095 Yerba Buena Rd, San Jose, CA 95135</a></p>
+                <p class="title"><a href="eventDetails">San Felipe Road</a></p>
+
+                <div class="goingComment">
+                    <a href="eventDetails.html">
+                        <i class="fas fa-motorcycle"></i>
+                        <p>30 Riders Going</p>
+                    </a>
+
+                    <a class="comment" href="eventDetails.html">
+                        <i class="fas fa-comment-alt"></i>
+                        <p>Comment</p>
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id="tabletUpcomingEvent">
+            
+            <h6>YOUR NEXT MEETUP</h6>
+            <hr>
+            <div class="infoLeft">
+                <h1><b>San Felipe Road</b></h1>
+                <h5>San Jose, CA <br> <i class="fas fa-motorcycle"></i> 30 Riders Going</h5>
+            </div>
+            <div class="icons">
+                <i class="fas fa-calendar-day"></i>
+                <br><br>
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="infoRight">
+                <h5>Friday, December 25, 2019</h5>
+                <br>
+                <h5><b>Evergreen Parking Lot A</b></h5>
+                <h5>3095 Yerba Buena Rd. <br> San Jose, CA 95127</h5>
+            </div>
+
+
+        </div>
+
+        <!-- <div id="desktopUpcomingEvent"></div> -->
+
+        <br><br><br><br>
+        
+        <p class="mobile">Mobile View</p>
+        <p class="tablet">Tablet View</p>
+        <p class="desktop">Desktop View</p>
         
     </body>
 </html>
