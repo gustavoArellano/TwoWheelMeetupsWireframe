@@ -271,6 +271,11 @@ a b {
     }
 
     /* HOW IT WORKS */
+    #howItWorks {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .find {
         width: 100%;
     }
@@ -351,12 +356,25 @@ a b {
     }
 
     /* HOW IT WORKS */
+    #howItWorks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 30px;
+
+    }
+
+    #howItWorks  h1, h1 b {
+        display: block;
+        width: 100%;
+    }
+
     .find {
-        margin-right: 8px;
+        margin: 10px;
     }
 
     .create {
-        margin-left: 8px;
+        margin: 10px;
     }
 
 }
