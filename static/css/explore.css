@@ -47,7 +47,7 @@
     padding-bottom: 15px;
 }
 
-#footer {
+/* #footer {
     background-color: #363E47;
     color: white;
     width: 100%;
@@ -55,8 +55,19 @@
     text-align: center;
     margin: 0px;
     padding-top: 5px;
-    /* margin-top: 20px; */
-    bottom: 0; 
+    /* margin-top: 20px; 
+}  */
+
+#footer {
+    background-color: #363E47;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+#footer p {
+    margin: 10px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -83,6 +94,8 @@
         position: fixed;
         width: 100%
     }
+
+    .footer
 
     /* HEADER */
     #header {
